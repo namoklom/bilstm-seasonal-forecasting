@@ -74,6 +74,22 @@ series += noise(time, noise_level=3, seed=51)
 
 ---
 
+## 📊 Visualizations
+
+![image](https://github.com/user-attachments/assets/f061f31b-144a-4c74-9de0-d7a7bb3377ca)
+
+The graph displays a time series with a repeating pattern characterized by sharp spikes followed by gradual declines, occurring at regular intervals. This cyclical behavior suggests a periodic event or process that resets periodically, with values sharply increasing and then decaying over time. The series also contains some noise or small fluctuations, which is common in real-world data, but the overall trend of recurring peaks is clearly visible. Such a pattern is ideal for time series forecasting models, as it offers predictable structure interspersed with variability.
+
+![image](https://github.com/user-attachments/assets/744bc4bf-ce1f-4492-b9d1-fa851d4224b0)
+
+The graph shows the training loss over 50 epochs, illustrating how the model's performance improves during training. At the beginning, the loss is very high, indicating poor model predictions. However, it rapidly decreases within the first few epochs, showing significant learning progress. After around 10 epochs, the curve starts to flatten, indicating that the model has reached a point of diminishing returns where further training yields only marginal improvements. The small fluctuations in the later epochs suggest some noise but overall stability, implying that the model has likely converged and is no longer significantly overfitting or underfitting.
+
+![image](https://github.com/user-attachments/assets/0bdf76b3-6a3a-4bd3-8372-0b430598432d)
+
+The graph shows a comparison between the actual time series values (in blue) and the model’s predictions (in orange) for the validation set, starting from time step 1100 onward. The actual series exhibits a noisy downward trend with occasional sharp peaks, while the predicted values closely follow the overall pattern with smoother fluctuations. The close alignment between the two lines indicates that the model has successfully learned the temporal dynamics of the series and can generalize well on unseen data, despite some minor deviations where the actual values spike abruptly.
+
+---
+
 ## 🛠️ Tools and Libraries Used
 
 | Tool / Library          | Description                                         | Purpose in Project                                    |
