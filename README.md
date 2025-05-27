@@ -66,6 +66,9 @@ time = np.arange(4 * 365 + 1, dtype="float32")  # 4 years of daily data
 series = trend(time, slope=0.005) + 10
 series += seasonality(time, period=365, amplitude=50)
 series += noise(time, noise_level=3, seed=51)
+```
+
+---
 
 ## 🛠️ Tools and Libraries Used
 
