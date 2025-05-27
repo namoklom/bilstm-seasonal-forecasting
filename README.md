@@ -66,3 +66,16 @@ time = np.arange(4 * 365 + 1, dtype="float32")  # 4 years of daily data
 series = trend(time, slope=0.005) + 10
 series += seasonality(time, period=365, amplitude=50)
 series += noise(time, noise_level=3, seed=51)
+
+## 🛠️ Tools and Libraries Used
+
+| Tool / Library          | Description                                         | Purpose in Project                                    |
+|------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| **Python**             | High-level programming language                     | Core language for data generation, modeling, and evaluation |
+| **NumPy**              | Numerical computing library                          | Handling arrays, numerical operations, and synthetic data creation |
+| **Matplotlib**         | Plotting library                                    | Visualizing time series, training loss, and forecasts |
+| **TensorFlow**         | Open-source deep learning framework                 | Building, training, and evaluating the BiLSTM model |
+| **tf.data API**        | TensorFlow data pipeline utilities                   | Creating efficient, batched, and shuffled datasets for training |
+| **Pickle**             | Python object serialization library                  | Saving model evaluation metrics for later use       |
+| **Jupyter Notebook**   | Interactive coding environment                        | Developing, testing, and documenting code interactively |
+| **Google Colab (optional)** | Cloud-based Jupyter notebook environment          | Running the project with free GPU access             |
